@@ -12,12 +12,20 @@ a, a:hover {
 	text-decoration: none; /*deletes decoration from links */
 }
 
+body {
+	background-color: #e7e7e7;
+}
+
 /* Header with navigation */
 
 header {
 	min-height: 100px;
-	background-color: #e50606;
+	background: url('../img/header.jpg') #e50606 no-repeat center left;
+	background-size: cover;
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
 	padding-top: 20px;
+	border-bottom: 3px black dotted;
 }
 
 header img {
@@ -60,11 +68,20 @@ header img {
 }
 }
 
-@media all and (max-device-width: 1024px) {
+@media all and (min-width: 769px) and (max-width: 1023px) {
 .flex--nav__element {
 	font-size: 1.0rem;
 }
 }
+
+/* Site content */
+
+.site--content {
+	margin: 0 5% 0 5%;
+}
+
+/* Displaying news */
+
 
 /* Align Classes */
 
