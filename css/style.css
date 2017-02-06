@@ -3,6 +3,7 @@ html, body {
 	color: black;
 	font-family: 'Franklin Gothic', sans-serif;
 	margin: 0;
+	background-color: #ea0b0b;
 }
 
 header {
@@ -22,12 +23,12 @@ header {
 	margin-top: 15px;
 	color: white;
 	font-family: 'Franklin Gothic', sans-serif;
-	font-size: 24px;
+	font-size: 22px;
 	font-stretch: condensed;
 	font-weight: 600;
 	text-transform: uppercase;
 	float: left;
-	width: 30%;
+	max-width: 30%;
 }
 
 .navigation__header {
@@ -79,6 +80,7 @@ header {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	border-bottom: 5px solid white;
 }
 
 .destination--holder__highlight {
@@ -121,7 +123,119 @@ header {
 	padding-top: 5px;
 }
 
-/* For <768px */
+.head--site {
+	width: 100%;
+	display: flex;
+	flex-wrap: no-wrap;
+}
+
+.news--holder {
+	margin-left: 5%;
+	max-width: 55%;
+	height: 600px;
+	overflow: hidden;
+}
+
+.news--holder__main {
+	background-image: url('../img/main--news.jpg');
+	background-size: cover;
+	background-position: center;
+	margin: 10px;
+	max-width: 100%;
+	height: 300px;
+	box-shadow: 2px -4px 32px -5px rgba(0,0,0,0.75);
+	border: 5px white solid;
+}
+
+.news--smallerholder {
+	display: flex;
+	wrap: no-wrap;
+	justify-content: space-around;
+}
+
+.news--holder__left {
+	background-image: url('../img/main--news.jpg');
+	background-size: cover;
+	background-position: center;
+	margin: 10px 10px 10px 0;
+	width: 40%;
+	height: 200px;
+	border: 5px red solid;
+	box-shadow: 2px -4px 32px -5px rgba(0,0,0,0.75);
+	border: 3px white solid;
+}
+
+.news--holder__right {
+	background-image: url('../img/main--news.jpg');
+	background-size: cover;
+	background-position: center;
+	margin-top: 10px;
+	width: 40%;
+	height: 200px;
+	border: 5px black solid;
+	box-shadow: 2px -4px 32px -5px rgba(0,0,0,0.75);
+	border: 3px white solid;
+}
+
+.news--holder__title {
+	margin-top: 10px;
+	color: black;
+	font-family: 'Franklin Gothic', sans-serif;
+	font-size: 3vw;
+	font-stretch: condensed;
+	text-transform: uppercase;
+	background-color: rgba(255, 255, 255, 0.4);
+	text-align: center;
+}
+
+.news--holder__description {
+	color: white;
+	font-family: 'Franklin Gothic', sans-serif;
+	font-size: 2vw;
+	font-stretch: condensed;
+	background-color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+}
+
+.news--rank {
+	display: block;
+	float: right;
+	margin: 0 5% 0 10px;
+	width: 35%;
+	height: 600px;
+	overflow: hidden;
+}
+
+.news--rank__heading {
+	background-color: white;
+	color: #ea0b0b;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 28px;
+	font-stretch:condensed;
+}
+
+.news--rank__list {
+	text-align: left;
+	margin-top: 30px;
+	list-style-type: none;
+}
+
+.news--rank__element {
+	background-color: white;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-top: 5px;
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ea0b0b;
+	font-stretch:condensed;
+}
+
+
+
+/* For <790px */
 @media all and (max-width: 790px){
 
 header {
@@ -161,53 +275,55 @@ header {
 	font-size: 30px;
 }
 
-.destination--holder {
-	overflow: hidden;
-	height: 350px;
-	width: 100%;
-	background-image: url(../img/destination.jpg);
-	background-repeat: no-repeat;
-	background-position: top right;
-	background-size: cover;
-}
-
 .destination--holder__highlight {
-	margin-top: 117px;
-	height: 120px;
+	height: 165px;
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.3);
 }
 
-.destination--holder__informator {
-	color: black;
-	margin: 0 10px 0 0;
-	text-align: right;
+.head--site {
+	width: 100%;
+	display: block;
+}
+
+.news--holder {
+	margin: 0 5% 0 5%;
+	max-width: 100%;
+	height: 900px;
+}
+
+.news--smallerholder {
+	display: block;
+}
+
+.news--holder__left {
+	margin: 15px auto;
+	width: 90%;
+}
+
+.news--holder__right {
+	margin: 15px auto;
+	width: 90%;
+}
+
+.news--holder__title {
+	font-size: 30px;
+}
+
+.news--holder__description {
 	font-size: 20px;
-	text-transform: uppercase;
-	font-stretch: condensed;
-	font-weight: 600;
-	padding-top: 5px;
 }
 
-.destination--holder__destination {
-	color: black;
-	margin: 0 10px 0 0;
-	text-align: right;
-	font-size: 40px;
-	text-transform: uppercase;
-	font-stretch: condensed;
-	font-weight: 600;
-	padding-top: 5px;
+.news--rank {
+	margin: 0 5% 0 5%;
+	width: 100%;
 }
 
-.destination--holder__description {
-	color: black;
-	margin: 0 10px 0 0;
-	text-align: right;
-	font-size: 15px;
-	text-transform: uppercase;
-	font-stretch: condensed;
-	font-weight: 600;
-	padding-top: 5px;
+.news--rank__heading {
+	margin: 0 auto;
+}
+
+.news--rank__list {
+	text-align: center;
 }
 }
+
