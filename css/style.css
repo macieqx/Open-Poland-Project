@@ -72,7 +72,7 @@ header {
 }
 
 .destination--holder {
-	margin: 0;
+	overflow: hidden;
 	height: 350px;
 	width: 100%;
 	background-image: url(../img/destination.jpg);
@@ -82,7 +82,7 @@ header {
 }
 
 .destination--holder__highlight {
-	margin-top: 30%;
+	margin-top: 117px;
 	height: 117px;
 	width: 50%;
 	background-color: rgba(255, 255, 255, 0.3);
@@ -90,7 +90,7 @@ header {
 
 .destination--holder__informator {
 	color: black;
-	margin: 0;
+	margin: 0 10px 0 0;
 	text-align: right;
 	font-size: 20px;
 	text-transform: uppercase;
@@ -101,7 +101,7 @@ header {
 
 .destination--holder__destination {
 	color: black;
-	margin: 0;
+	margin: 0 10px 0 0;
 	text-align: right;
 	font-size: 40px;
 	text-transform: uppercase;
@@ -112,7 +112,97 @@ header {
 
 .destination--holder__description {
 	color: black;
-	margin: 0;
+	margin: 0 10px 0 0;
+	text-align: right;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-stretch: condensed;
+	font-weight: 600;
+	padding-top: 5px;
+}
+
+/* For <768px */
+@media all and (max-width: 790px){
+
+header {
+	height: 100%;
+}
+
+.top--holder__header {
+	width: 100%;
+	height: 100px;
+}
+
+.logo {
+	float: left;
+	width: 100%;
+}
+
+.navigation__header {
+	width: 100%;
+	display: inline-block;
+	text-align: right;
+}
+
+.navigation__element a {
+	font-size: 20px;
+}
+
+
+.heading__header1 {
+	text-align: left;
+	margin-top: 30px;
+	font-size: 30px;
+}
+
+.heading__header2 {
+	text-align: left;
+	margin-bottom: 30px;
+	font-size: 30px;
+}
+
+.destination--holder {
+	overflow: hidden;
+	height: 350px;
+	width: 100%;
+	background-image: url(../img/destination.jpg);
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: cover;
+}
+
+.destination--holder__highlight {
+	margin-top: 117px;
+	height: 120px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.destination--holder__informator {
+	color: black;
+	margin: 0 10px 0 0;
+	text-align: right;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-stretch: condensed;
+	font-weight: 600;
+	padding-top: 5px;
+}
+
+.destination--holder__destination {
+	color: black;
+	margin: 0 10px 0 0;
+	text-align: right;
+	font-size: 40px;
+	text-transform: uppercase;
+	font-stretch: condensed;
+	font-weight: 600;
+	padding-top: 5px;
+}
+
+.destination--holder__description {
+	color: black;
+	margin: 0 10px 0 0;
 	text-align: right;
 	font-size: 15px;
 	text-transform: uppercase;
