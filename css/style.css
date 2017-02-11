@@ -6,6 +6,11 @@ html, body {
 	background-color: #ea0b0b;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 header {
 	margin: 0;
 	height: 350px;
@@ -72,6 +77,16 @@ header {
 	font-size: 40px;
 }
 
+
+@keyframes leftright {
+	50% {
+		background-position: left;
+	}
+	100% {
+		background-position: center;
+	}
+}
+
 .destination--holder {
 	overflow: hidden;
 	height: 350px;
@@ -81,6 +96,10 @@ header {
 	background-position: center;
 	background-size: cover;
 	border-bottom: 5px solid white;
+	animation-name: leftright;
+	animation-delay: 5s;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
 }
 
 .destination--holder__highlight {
@@ -140,7 +159,7 @@ header {
 	background-image: url('../img/main--news.jpg');
 	background-size: cover;
 	background-position: center;
-	margin: 10px;
+	margin: 30px 10px 10px 10px;
 	max-width: 100%;
 	height: 300px;
 	box-shadow: 2px -4px 32px -5px rgba(0,0,0,0.75);
@@ -156,9 +175,8 @@ header {
 .news--holder__left {
 	background-image: url('../img/main--news.jpg');
 	background-size: cover;
-	background-position: center;
+	background-position: top right;
 	margin: 10px 10px 10px 0;
-	width: 40%;
 	height: 200px;
 	border: 5px red solid;
 	box-shadow: 2px -4px 32px -5px rgba(0,0,0,0.75);
@@ -168,13 +186,17 @@ header {
 .news--holder__right {
 	background-image: url('../img/main--news.jpg');
 	background-size: cover;
-	background-position: center;
+	background-position: top right;
 	margin-top: 10px;
-	width: 40%;
 	height: 200px;
 	border: 5px black solid;
 	box-shadow: 2px -4px 32px -5px rgba(0,0,0,0.75);
 	border: 3px white solid;
+}
+
+.news--holder__left:hover, .news--holder__right:hover,.news--holder__main:hover {
+	background-position: left;
+	transition: 2s;
 }
 
 .news--holder__title {
@@ -199,8 +221,8 @@ header {
 
 .news--rank {
 	display: block;
-	margin: 0 5% 0 10px;
-	width: 35%;
+	margin: 0 auto;
+	width: 25%;
 	height: 600px;
 	overflow: hidden;
 }
@@ -231,6 +253,28 @@ header {
 	font-stretch:condensed;
 }
 
+.mid--site {
+	border-top: 5px solid white;
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.mid--site__heading {
+	background-color: white;
+	color: #ea0b0b;
+	text-align: center;
+	text-transform: uppercase;
+	font-stretch:condensed;
+	text-align: center;
+	font-size: 34px;
+	padding: 0 0 5px 0;
+	margin: 5px 0 0 0;
+}
+
+.mySlides {
+	max-width: 100%;
+}
 
 
 /* For <790px */
@@ -321,6 +365,13 @@ header {
 .news--rank__list {
 	width: 100%;
 	text-align: center;
+}
+.mid--site {
+	max-height: 300px;
+}
+
+.mySlides {
+	width: 100%;
 }
 }
 
